@@ -30,7 +30,7 @@ public class AmazonPage extends PageObject {
     }
 
     public long getResultCount() throws ParseException {
-        WebElement resultCount = driver.findElement(By.xpath("//*[@id=\"search\"]/span/div/div/div[1]/div/div/span[1]"));
+        WebElement resultCount = driver.findElement(By.xpath("/html/body/div[1]/div[2]/span/h1/div/div[1]/div/div/span[1]"));
         String resultCountText = resultCount.getText();
         String results = StringUtils.substringBetween(resultCountText, "of ", " results");
         results = StringUtils.replace(results, "over", "").trim();
