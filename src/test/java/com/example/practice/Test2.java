@@ -20,6 +20,7 @@ public class Test2 {
     }
 
     @Test
+    @Tag("auto")
     void shouldGetALotOfResults() throws Exception {
         amazonPage.load();
         amazonPage.search("bunny");

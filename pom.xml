@@ -77,9 +77,7 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <!--          <properties>-->
-                    <!--            <includeTags>auto</includeTags>-->
-                    <!--          </properties>-->
+                    <groups>auto</groups>
                 </configuration>
             </plugin>
         </plugins>
