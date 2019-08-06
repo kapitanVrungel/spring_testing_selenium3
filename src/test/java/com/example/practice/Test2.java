@@ -13,6 +13,7 @@ public class Test2 {
     @Autowired GooglePage googlePage;
 
     @Test
+    @Tag("auto")
     void googleSearch() {
         googlePage.load();
         googlePage.search("bugs bunny");
@@ -28,6 +29,7 @@ public class Test2 {
     }
 
     @Test
+    @Tag("auto")
     void shouldGetFewerResults() throws Exception {
         amazonPage.load();
         amazonPage.search("bugs bunny dvd");
