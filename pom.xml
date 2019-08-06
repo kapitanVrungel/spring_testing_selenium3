@@ -14,7 +14,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.9.RELEASE</version>
+    <version>2.1.6.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
@@ -48,7 +48,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-server</artifactId>
-      <version>3.3.1</version>
+      <version>3.14.0</version>
     </dependency>
   </dependencies>
 
@@ -58,6 +58,15 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+<!--          <properties>-->
+<!--            <includeTags>auto</includeTags>-->
+<!--          </properties>-->
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
+
